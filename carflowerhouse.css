@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.treebutton {
+    stroke: yellow;
+    fill: lightgreen;
+    stroke-width: 5;
+}
+
+.housebutton {
+    stroke: rgb(0, 225, 255);
+    fill: rgb(238, 236, 144);
+    stroke-width: 5;
+}
+
+.carbutton {
+    stroke: rgb(228, 60, 116);
+    fill: rgb(80, 162, 230);
+    stroke-width: 5;
+}
+
+.treebutton:hover {
+    stroke: yellow;
+    fill: lightgreen;
+    stroke-width: 5;
+    opacity: 50%;
+}
+
+.housebutton:hover {
+    stroke: rgb(0, 225, 255);
+    fill: rgb(238, 236, 144);
+    stroke-width: 5;
+    opacity: 50%;
+}
+
+.carbutton:hover {
+    stroke: rgb(228, 60, 116);
+    fill: rgb(80, 162, 230);
+    stroke-width: 5;
+    opacity: 50%;
+}
+
+.houseouter {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 5;
+}
+
+.window {
+    stroke: black;
+    fill: grey;
+    stroke-width: 5;
+    width: 35px;
+    height: 35px;
+}
+
+.window.light {
+    stroke: black;
+    fill: lightgreen;
+    stroke-width: 5;
+    width: 35px;
+    height: 35px;
+}
+
+.door {
+    stroke: green;
+    fill: lightskyblue;
+    stroke-width: 5;
+    width: 35px;
+    height: 100px;
+}
+
+.hill {
+    stroke: green;
+    fill: lightskyblue;
+    stroke-width: 5;
+}
+
+.treebody {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 5;
+}
+
+.polyline1 {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 5;
+}
+
+.mouth {
+    stroke: green;
+    fill: rgb(240, 57, 224);
+    stroke-width: 5;
+}
