@@ -53,8 +53,8 @@ button {
 }
 
 .houseouter {
-    stroke: black;
-    fill: transparent;
+    stroke: rgba(95, 19, 19);
+    fill: rgba(rgb(218, 125, 125));
     stroke-width: 5;
 }
 
@@ -67,11 +67,7 @@ button {
 }
 
 .window.light {
-    stroke: black;
     fill: lightgreen;
-    stroke-width: 5;
-    width: 35px;
-    height: 35px;
 }
 
 .door {
@@ -94,10 +90,76 @@ button {
     stroke-width: 5;
 }
 
-.polyline1 {
+.something:hover {
+    transform: scale(1.25);
+    transition-duration: 1.5s;
+}
+
+.wheels1,
+.wheels2 {
     stroke: black;
-    fill: transparent;
+    fill: orange;
     stroke-width: 5;
+}
+
+.wheelsrect1,
+.wheelsrect2 {
+    stroke: black;
+    fill: greenyellow;
+    stroke-width: 5;
+    z-index: 1;
+}
+
+
+/* .wheels2:hover {
+    stroke: black;
+    fill: orange;
+    stroke-width: 5;
+    animation: wheels1;
+    animation-duration: 2s;
+} */
+
+
+/* @keyframes wheels1 {
+    from {
+        cx: 750
+    }
+    to {
+        cx: 350
+    }
+} */
+
+.wheelsturn.move {
+    animation-name: wheelsmove;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: left;
+}
+
+
+/* 
+@keyframes wheels2 {
+    from {
+        cx: 570
+    }
+    to {
+        cx: 170
+    }
+} */
+
+@keyframes wheelsmove {
+    0% {
+        left: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        left: 250px;
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        left: 500px;
+        animation-timing-function: linear;
+    }
 }
 
 .mouth {

@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
     console.log("DOM Loaded");
 
-    document.querySelector("button.tree"), addEventListener("click", treefunc);
-    document.querySelector("button.car"), addEventListener("click", carfunc);
-    document.querySelector("button.house"), addEventListener("click", windowfunc);
+    document.querySelector(".treebutton").addEventListener("click", treefunc);
+    document.querySelector(".carbutton").addEventListener("click", carfunc);
+    document.querySelector(".housebutton").addEventListener("click", windowfunc);
 }
 
 function treefunc() {
@@ -18,9 +18,10 @@ function treefunc() {
 function carfunc() {
     console.log("car animation");
 
+    document.querySelector(".wheelsturn").classList.add("move");
 }
 
 function windowfunc() {
     console.log("window animation");
-
+    document.querySelector(".window").classList.add("light");
 }
